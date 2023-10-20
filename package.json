@@ -1,11 +1,14 @@
 {
   "name": "202309-w2ch5-abel-naharro",
   "version": "1.0.0",
-  "description": "",
+  "description": "Week 2 - Challenge Weekend",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "sass": "sass scss:css -w --no-source-map",
-    "test": "jest",
+    "test:pro": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
+    "test": "jest --watchAll",
+    "test:coverage": "jest --watchAll --coverage",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -20,11 +23,6 @@
     "husky": "^8.0.0",
     "jest": "^29.7.0",
     "sass": "^1.69.4"
-  },
-  "typeAcquisition": {
-    "include": [
-      "jest"
-    ]
   },
   "babel": {
     "env": {
